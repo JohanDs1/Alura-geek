@@ -1,0 +1,13 @@
+.footer__contacto__submit{
+    width: 30%;
+    padding: 1rem;
+    background-color: var(--Blue);
+    color: #FFFFFF;
+    border: none;
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    .footer__contacto__submit{
+        width: 45%;
+    }
+}

@@ -1,0 +1,10 @@
+.category__product__img{
+    width:175px; 
+    height:173px;
+}
+
+@media screen and (min-width:375px) and (max-width:412px) {
+    .category__product__img{
+        width:156px; 
+}
+}

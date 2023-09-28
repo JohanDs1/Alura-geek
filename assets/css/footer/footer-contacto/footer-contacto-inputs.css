@@ -1,0 +1,29 @@
+.footer__contacto__inputs{
+    margin: 8px 0;
+    width: 435px;
+    height: 50px;
+    padding: 0 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--preto-30);
+}
+::placeholder{
+	font-weight: 400;
+}
+.footer__contacto__inputs.textarea{
+    height: 100px;
+    padding: 0 12px;
+    padding-top: 1rem;
+}
+.footer__contacto__inputs:focus,.footer__contacto__inputs.textarea:focus{
+    border: 2px solid var(--Blue);
+    border-radius: 4px;
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+    .footer__contacto__inputs{
+        width: 309px;
+        height: 50px;
+    }   
+}

@@ -1,0 +1,4 @@
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+}

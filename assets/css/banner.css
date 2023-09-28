@@ -1,0 +1,12 @@
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../../assets/img/Hero.png);
+    background-size: cover;
+    position: relative;   
+    
+}
+
+@media screen and (min-width: 375px) and (max-width:412px){
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets\css\reset.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets\css\header\header__icon__search.css">
+    <link rel="stylesheet" href="../assets\css\header\header__logo.css">
+    <link rel="stylesheet" href="../assets\css\header\header_input.css">
+    <link rel="stylesheet" href="../assets\css\login.css">
+    <link rel="stylesheet" href="../assets\css\login\login-form.css">
+    <link rel="stylesheet" href="../assets\css\login\login-text.css">
+    <link rel="stylesheet" href="../assets\css\login\login-button.css">
+    <link rel="stylesheet" href="../assets\css\login\login-inputs.css">
+    <link rel="stylesheet" href="../assets\css\footer.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-logo\footer-logo.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-list\footer-list.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-contacto\footer-contacto.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-contacto\footer-contacto-title.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-contacto\footer-contacto-inputs.css">
+    <link rel="stylesheet" href="../assets\css\footer\footer-contacto\footer-contacto-button.css">
+    <link rel="stylesheet" href="../assets\css\rodapie.css">
+    <link rel="stylesheet" href="../assets\css\rodapie\rodapie-list.css">
+    <link rel="stylesheet" href="../assets\css\rodapie\rodapie-text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <!--VARIABLES EN EL ARCHIVO RESET.CSS-->
+</head>
+<body>
+    <section class="head">
+        <header class="menu__header">
+            <div class="menu__header__div">
+                <div class="menu__header__lg__text">
+                    <img src="../assets/img/Vector.svg" alt="logo AluraGeek" class="head__img__logo">
+                    <a href="index.html"><img src="../assets/img/Texto.svg" alt="texto AluraGeek" class="head__img__text"></a>
+                </div>
+                <div class=" head__div__search">
+                    <input type="text" placeholder="¿Qué deseas buscar?" class="head__input__search">
+                    <svg class="head__img__search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path class="head__img__search" d="M15.4999 14H14.7099L14.4299 13.73C15.6299 12.33 16.2499 10.42 15.9099 8.39C15.4399 5.61 13.1199 3.39 10.3199 3.05C6.08989 2.53 2.52989 6.09 3.04989 10.32C3.38989 13.12 5.60989 15.44 8.38989 15.91C10.4199 16.25 12.3299 15.63 13.7299 14.43L13.9999 14.71V15.5L18.2499 19.75C18.6599 20.16 19.3299 20.16 19.7399 19.75C20.1499 19.34 20.1499 18.67 19.7399 18.26L15.4999 14ZM9.49989 14C7.00989 14 4.99989 11.99 4.99989 9.5C4.99989 7.01 7.00989 5 9.49989 5C11.9899 5 13.9999 7.01 13.9999 9.5C13.9999 11.99 11.9899 14 9.49989 14Z" fill="#A2A2A2"/>
+                    </svg>
+                
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="login">
+        <h1 class="login__text">Iniciar Sesion</h1>
+        <div class="login_form__div">
+            <form class="login__form">
+                <input type="email" class="login__inputs" id="email" placeholder="Escriba su correo electrónico" >
+                <input type="password" class="login__inputs" id="password" placeholder="Escriba su contraseña">
+                <button type="submit" class="login__button">Entrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__logo">
+            <img src="../assets/img/Vector.svg" alt="Logo Alura Geek" class="footer__logo__img">
+            <img src="../assets/img/Texto.svg" alt="text Alura Geek" class="footer__logo__text">
+        </div>
+        <div class="footer__list">
+            <ul class="footer__list__container">
+                <li class="footer__list__text">Quienes somos</li>
+                <li class="footer__list__text">Política de privacidad</li>
+                <li class="footer__list__text">Programa de fidelidad</li>
+                <li class="footer__list__text">Nuestras tiendas</li>
+                <li class="footer__list__text">Quiero ser franquiciado</li>
+                <li class="footer__list__text">Anúncie aquí</li>
+            </ul>
+        </div>
+        <div class="footer__contacto">
+            <h2 class="footer__contacto__title">Hable con nosotros</h2>
+            <input type="text" class="footer__contacto__inputs" placeholder="Nombre">
+            <textarea class="footer__contacto__inputs textarea" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <button class="footer__contacto__submit">Enviar mensaje</button>
+        </div>
+    </section>
+    <section class="rodapie">
+            <ul class="rodapie__list">
+                <li class="rodapie__list__text">Desarrollado por Johan Bermeo</li>
+                <li class="rodapie__list__text">2023</li>
+            </ul>
+    </section>
+
+
+</body>
+</html>

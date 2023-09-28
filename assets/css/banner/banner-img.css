@@ -1,0 +1,7 @@
+@media screen and (min-width: 375px) and (max-width:412px){
+
+    .banner__img{
+        height: 192px;
+        filter: brightness(70%);
+    }
+}

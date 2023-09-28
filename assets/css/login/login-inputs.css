@@ -1,0 +1,26 @@
+.login__inputs{
+    margin: 1rem 0;
+    border-radius: 4px;
+    background-color: var(--BackgroundColor);
+    border: none;
+    outline: none;
+    width: 20rem;
+    height: 3.5rem;
+    padding: 0 12px;
+    border-bottom: 1px solid #C8C8C8;
+
+}
+.login__inputs:focus{
+    border: 2px solid var(--Blue);
+    border-radius: 4px;
+}
+::placeholder{
+    color: #A2A2A2;
+    font-size: 1rem;
+}
+@media screen and (min-width:375px) and (max-width:412px){
+    .login__inputs{
+        width: 14rem;
+        height: 3rem;
+    }
+}

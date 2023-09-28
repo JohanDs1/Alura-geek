@@ -1,0 +1,13 @@
+.form__new__product{
+    width: 560px;
+    margin: 0 auto;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+@media screen  and (min-width:375px) and (max-width:412px){
+    .form__new__product{
+        width: 328px;
+    }
+}

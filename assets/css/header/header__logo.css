@@ -1,0 +1,13 @@
+.menu__header__lg__text{
+    position: relative;
+}
+
+@media screen and (min-width:375px) and (max-width:412px){
+
+    .head__img__logo{
+        width: 25px;
+    }
+    .head__img__text{
+        width: 100px;
+    }
+}

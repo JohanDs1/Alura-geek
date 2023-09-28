@@ -1,0 +1,11 @@
+.products{
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+@media screen and (min-width:375px) and (max-width:412px) {
+    .products{
+        flex-wrap: wrap;
+    }
+}

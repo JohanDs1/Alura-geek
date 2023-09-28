@@ -1,0 +1,25 @@
+
+.head__img__search{
+    position: absolute;
+    right: 40px;
+    top: 12px;
+    cursor: pointer;
+
+}
+.head__img__search:hover{
+    transition:  2000ms ;
+    fill: var(--black);
+}
+
+@media screen and (min-width: 375px) and (max-width:412px){
+    .head__img__search{
+        position: relative;
+        top: 3px;
+        left: 180px;
+        fill: var(--black);
+
+    }
+
+
+}
+

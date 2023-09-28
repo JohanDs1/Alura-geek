@@ -1,0 +1,6 @@
+.new__product__button{
+    padding: 1em;
+    color: var(--BackgroundColor);
+    background-color: var(--Blue);
+    border: none;
+}

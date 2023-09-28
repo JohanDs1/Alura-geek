@@ -1,0 +1,44 @@
+/*Container textos y boton*/
+.banner__div__txt__btn {
+    position: absolute;
+    bottom: 2rem; 
+    left: 100px;
+    padding: 10px;     
+    color: var(--BackgroundColor);
+}
+
+/*Texto grande*/
+.banner__title{
+    font-size: 52px;
+}
+/*Texto Descripcion*/
+.banner__description{
+    font-size: 22px;
+    margin: 1rem 0;
+}
+/*Boton*/
+.banner__button{
+    padding: 1rem;
+    background-color: var(--Blue);
+    color: var(--BackgroundColor);
+    border: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 375px) and (max-width:412px){
+    .banner__div__txt__btn {
+        padding: 0;
+        top: 60px;
+        left: 16px;
+    }
+    .banner__title{
+        font-size: 22px;
+    }
+    .banner__description{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .banner__button{
+        padding: 12px 1rem;
+    }
+}
+

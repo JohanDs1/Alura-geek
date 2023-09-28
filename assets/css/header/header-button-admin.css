@@ -1,0 +1,17 @@
+
+.link__menu__admin{
+    background-color: var(--BackgroundColor);
+    padding: 1rem 2rem;
+    border: 1px solid var(--Blue);
+    text-decoration: none;
+    color: var(--Blue);
+}
+
+@media screen and (min-width:375px)  and (max-width:412px){
+    .link__menu__admin{
+        position: relative;
+        right: 77px;
+        padding: 1rem;
+        font-size: 14px;
+    }
+}
