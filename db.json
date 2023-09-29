@@ -2,172 +2,150 @@
     "categories": [
       {
         "id": 1,
-        "category": "Star Wars",
-        "products": [
-          {
-            "id": 1,
-            "name": "Bebe yoda",
-            "price": "100$",
-            "image": "https://www.elplural.com/uploads/s1/99/39/10/star-wars-baby-yoda.jpeg"
-          },
-          {
-            "id": 2,
-            "name": "Darth Vader con capucha",
-            "price": "20$",
-            "image": "../assets/img/Darth Vader cubierto.png"
-          },
-          {
-            "id": 3,
-            "name": "Darth Vader",
-            "price": "120$",
-            "image": "../assets/img/Darth Vader.png"
-          },
-          {
-            "id": 4,
-            "name": "Mestro Yoda",
-            "price": "60$",
-            "image": "../assets/img/Maestro Yoda.png"
-          },
-          {
-            "id": 5,
-            "name": "Taza de Stormtrooper",
-            "price": "50$",
-            "image": "../assets/img/Taza de Stormtrooper.png"
-          },
-          {
-            "id": 6,
-            "name": "Stormtrooper",
-            "price": "30$",
-            "image": "../assets\\img\\Stormtrooper.png"
-          }
-        ]
+        "name": "Star Wars"
       },
       {
         "id": 2,
-        "category": "Resident Evil",
-        "products": [
-          {
-            "id": 7,
-            "name": "Leon Kennedy",
-            "price": "50$",
-            "image": "https://i.pinimg.com/originals/87/0d/85/870d8535536d22e0077fd5f41c7ae43f.jpg"
-          },
-          {
-            "id": 8,
-            "name": "Krauser",
-            "price": "15$",
-            "image": "https://i.pinimg.com/736x/56/0d/6a/560d6ae000d9e3ea5a3d33358755c0ea--resident-evil-action-figures.jpg"
-          },
-          {
-            "id": 9,
-            "name": "Ada Wong",
-            "price": "60$",
-            "image": "https://www.anmosugoi.com/wp-content/uploads/2023/07/Ada-Wong-Figura-4-scaled.jpg"
-          },
-          {
-            "id": 10,
-            "name": "Ashley Graham",
-            "price": "10$",
-            "image": "https://i.etsystatic.com/34438154/r/il/a9ed3a/4825784883/il_1080xN.4825784883_z17j.jpg"
-          },
-          {
-            "id": 11,
-            "name": "Garrador",
-            "price": "34.99$",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaw0mmIPFxk_k-SMdGHXBABkpqTQCbKUcgYzZAf9HsUXNQnwuahCC1Dixcglm7vtVL8E&usqp=CAU"
-          },
-          {
-            "id": 12,
-            "name": "Leon Kennedy RE4",
-            "price": "55$",
-            "image": "https://i.etsystatic.com/34438154/r/il/5f6cd7/4781388284/il_570xN.4781388284_bqiu.jpg"
-          }
-        ]
+        "name": "Resident Evil"
       },
       {
         "id": 3,
-        "category": "Need For Speed",
-        "products": [
-          {
-            "id": 13,
-            "name": "Carro Mustang de NFS",
-            "price": "24,99$",
-            "image": "https://m.media-amazon.com/images/I/61uQQx4MMOL.jpg"
-          },
-          {
-            "id": 14,
-            "name": "Polestar Car NFS",
-            "price": "49,99$",
-            "image": "https://i.ebayimg.com/images/g/108AAOSwIaJhjLnw/s-l1200.webp"
-          },
-          {
-            "id": 15,
-            "name": "BMW clasico NFS",
-            "price": "46,99$",
-            "image": "https://i.pinimg.com/originals/d7/8c/c2/d78cc286fd918b602b8a245d81652f5f.jpg"
-          },
-          {
-            "id": 16,
-            "name": "Carro de policia NFS",
-            "price": "59,99$",
-            "image": "https://i5.walmartimages.com/asr/f28beee9-5077-42b6-ad5f-f01003997fd8.906158d4647645625feeff301dabf758.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-          },
-          {
-            "id": 17,
-            "name": "BMW carro NFS lego",
-            "price": "49,00$",
-            "image": "https://i0.wp.com/thelegocarblog.com/wp-content/uploads/2020/03/15832937338_display.jpg?resize=500%2C315&ssl=1"
-          },
-          {
-            "id": 18,
-            "name": "Mostop GT RC Drift Racing Car",
-            "price": "69,99$",
-            "image": "https://m.media-amazon.com/images/I/41xAnL3YUCL._AC_.jpg"
-          }
-        ]
+        "name": "Need For Speed"
       },
       {
         "id": 4,
-        "category": "Diversos",
-        "products": [
-          {
-            "id": 19,
-            "name": "Mostop GT RC Drift Racing Car",
-            "price": "69,99$",
-            "image": "https://m.media-amazon.com/images/I/41xAnL3YUCL._AC_.jpg"
-          },
-          {
-            "id": 20,
-            "name": "Garrador",
-            "price": "34.99$",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaw0mmIPFxk_k-SMdGHXBABkpqTQCbKUcgYzZAf9HsUXNQnwuahCC1Dixcglm7vtVL8E&usqp=CAU"
-          },
-          {
-            "id": 21,
-            "name": "Ashley Graham",
-            "price": "10$",
-            "image": "https://i.etsystatic.com/34438154/r/il/a9ed3a/4825784883/il_1080xN.4825784883_z17j.jpg"
-          },
-          {
-            "id": 22,
-            "name": "Bebe yoda",
-            "price": "100$",
-            "image": "https://www.elplural.com/uploads/s1/99/39/10/star-wars-baby-yoda.jpeg"
-          },
-          {
-            "id": 23,
-            "name": "Leon Kennedy",
-            "price": "50$",
-            "image": "https://i.pinimg.com/originals/87/0d/85/870d8535536d22e0077fd5f41c7ae43f.jpg"
-          },
-          {
-            "id": 24,
-            "name": "Taza de Stormtrooper",
-            "price": "50$",
-            "image": "../assets/img/Taza de Stormtrooper.png"
-          }
-        ]
+        "name": "Diversos"
+      }
+    ],
+    "products": [
+      {
+        "id": 12555,
+        "category_id": 1,
+        "name": "Bebe yoda",
+        "price": "100$",
+        "image": "https://www.elplural.com/uploads/s1/99/39/10/star-wars-baby-yoda.jpeg"
+      },
+      {
+        "id": 2,
+        "category_id": 1,
+        "name": "Darth Vader con capucha",
+        "price": "20$",
+        "image": "../assets/img/Darth Vader cubierto.png"
+      },
+      {
+        "id": 3,
+        "category_id": 1,
+        "name": "Darth Vader",
+        "price": "120$",
+        "image": "../assets/img/Darth Vader.png"
+      },
+      {
+        "id": 4,
+        "category_id": 4,
+        "name": "Maestro Yoda",
+        "price": "60$",
+        "image": "../assets/img/Maestro Yoda.png"
+      },
+      {
+        "id": 5,
+        "category_id": 1,
+        "name": "Taza de Stormtrooper",
+        "price": "50$",
+        "image": "../assets/img/Taza de Stormtrooper.png"
+      },
+      {
+        "id": 6,
+        "category_id": 4,
+        "name": "Stormtrooper",
+        "price": "30$",
+        "image": "../assets/img/Stormtrooper.png"
+      },
+
+      {
+        "id": 7,
+        "category_id": 2,
+        "name": "Leon Kennedy",
+        "price": "50$",
+        "image": "https://i.pinimg.com/originals/87/0d/85/870d8535536d22e0077fd5f41c7ae43f.jpg"
+      },
+      {
+        "id": 8,
+        "category_id": 2,
+        "name": "Krauser",
+        "price": "15$",
+        "image": "https://i.pinimg.com/736x/56/0d/6a/560d6ae000d9e3ea5a3d33358755c0ea--resident-evil-action-figures.jpg"
+      },
+      {
+        "id": 31,
+        "category_id": 2,
+        "name": "Ada Wong",
+        "price": "60$",
+        "image": "https://www.anmosugoi.com/wp-content/uploads/2023/07/Ada-Wong-Figura-4-scaled.jpg"
+      },
+      {
+        "id": 1979,
+        "category_id": 2,
+        "name": "Ashley Graham",
+        "price": "10$",
+        "image": "https://i.etsystatic.com/34438154/r/il/a9ed3a/4825784883/il_1080xN.4825784883_z17j.jpg"
+      },
+      {
+        "id": 14124,
+        "category_id": 4,
+        "name": "Leon Kennedy RE4",
+        "price": "55$",
+        "image": "https://i.etsystatic.com/34438154/r/il/5f6cd7/4781388284/il_570xN.4781388284_bqiu.jpg"
+      },
+      {
+        "id": 20,
+        "category_id": 2,
+        "name": "Garrador",
+        "price": "34.99$",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaw0mmIPFxk_k-SMdGHXBABkpqTQCbKUcgYzZAf9HsUXNQnwuahCC1Dixcglm7vtVL8E&usqp=CAU"
+      },
+      {
+        "id": 13,
+        "category_id": 3,
+        "name": "Carro Mustang de NFS",
+        "price": "24,99$",
+        "image": "https://m.media-amazon.com/images/I/61uQQx4MMOL.jpg"
+      },
+      {
+        "id": 14,
+        "category_id": 3,
+        "name": "Polestar Car NFS",
+        "price": "49,99$",
+        "image": "https://i.ebayimg.com/images/g/108AAOSwIaJhjLnw/s-l1200.webp"
+      },
+      {
+        "id": 19,
+        "category_id": 4,
+        "name": "Mostop GT RC Drift Racing Car",
+        "price": "69,99$",
+        "image": "https://m.media-amazon.com/images/I/41xAnL3YUCL._AC_.jpg"
+      },
+      {
+        "id": 15,
+        "category_id": 3,
+        "name": "BMW clasico NFS",
+        "price": "46,99$",
+        "image": "https://i.pinimg.com/originals/d7/8c/c2/d78cc286fd918b602b8a245d81652f5f.jpg"
+      },
+      {
+        "id": 16,
+        "category_id": 4,
+        "name": "Carro de policia NFS",
+        "price": "59,99$",
+        "image": "https://i5.walmartimages.com/asr/f28beee9-5077-42b6-ad5f-f01003997fd8.906158d4647645625feeff301dabf758.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+      },
+      {
+        "id": 17,
+        "category_id": 3,
+        "name": "BMW carro NFS lego",
+        "price": "49,00$",
+        "image": "https://i0.wp.com/thelegocarblog.com/wp-content/uploads/2020/03/15832937338_display.jpg?resize=500%2C315&ssl=1"
       }
     ]
   }
-  
+
+

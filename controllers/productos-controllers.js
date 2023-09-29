@@ -1,13 +1,12 @@
 const newProduct = (id,name,price,image)=>{
     const card = document.createElement('div')
+    card.classList.add('product');
     const content = `
-    <div class="product">
     <img src="${image}" alt="" class="category__product__img">
     <div class="product__texts">
         <h2 class="category__product__title">${name} </h2>
         <p class="category__product__price">${price}$</p>
         <a href="?${id}" class="category__product__link">Ver producto</a>
-    </div>
     </div>
     `
     card.innerHTML = content;
