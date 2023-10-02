@@ -56,8 +56,15 @@
         <form action="" class="form__new__product" data-form>
             <h1 class="new__product__title">Agregar Nuevo Producto</h1>
             <input type="text" id="url" name="url" class="new__product__input" placeholder="URL de imagen" data-url>
-            <input type="text" id="categoria" name="categoria" class="new__product__input" placeholder="Categoría" data-category>
-            <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
+            <select class="new__product__input" name="categories" id="categories_menu" data-options>
+                <option value="option default" hidden>Select a category</option>
+                <!-- <option value="option 1 ">Resident Evil</option>
+                <option value="option 2 ">Star Wars</option>
+                <option value="option 3 ">Need For speed</option>
+                <option value="option 4">Others</option> -->
+            </select>
+<!--             <input type="text" id="categoria" name="categoria" class="new__product__input" placeholder="Categoría" data-category>
+ -->            <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
             <input type="text" id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" data-price>
             <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="new__product__description" placeholder="Descripción del producto"></textarea>
             <button class="new__product__button">Agregar Producto</button>
@@ -94,6 +101,6 @@
                 <li class="rodapie__list__text">2023</li>
             </ul>
     </section>
-    <script  type="module" src="../controllers/crear-producto-controller.js"></script>
+    <script  type="module" src="../controllers/getCategories.js"></script>
 </body>
 </html>
