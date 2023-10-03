@@ -1,27 +1,35 @@
 //Conectando las categorias existentes
 const http = new XMLHttpRequest();
-http.open("GET","http://localhost:3000/categories");
+http.open("GET", "http://localhost:3000/categories");
 http.send();
-http.onload = () =>{
-    const data = JSON.parse(http.response)
-    console.log(data)
-    data.forEach(categories =>{
-        const categoriesContainer = containerProducts(categories.name,categories.id)
-        category.appendChild(categoriesContainer)
+http.onload = () => {
+    const data = JSON.parse(http.response);
+    const categorySection = document.querySelector('.category');
+    
+    data.forEach(categoryData => {
+        const categoryContainer = containerProducts(categoryData.name, categoryData.id);
+        categorySection.appendChild(categoryContainer);  // Agregar al contenedor de la sección
 
-        
-       /*  if(categories.id == products.category_id){
-            console.log("Hola")
-        }  */  
-    })
-}
+        const productsContainer = categoryContainer.querySelector('[data-product]');
 
+        const httpInterno = new XMLHttpRequest();
+        httpInterno.open('GET', 'http://localhost:3000/products');
+        httpInterno.send();
+        httpInterno.onload = () => {
+            const productsData = JSON.parse(httpInterno.response);
+            productsData.forEach(product => {
+                if (categoryData.id === product.category_id) {
+                    const productCard = newProduct(product.image, product.name, product.price);
+                    productsContainer.appendChild(productCard);
+                }
+            });
+        };
+    });
+};
 
 
 
 //Container para mostrar la categoria 
-const category = document.querySelector('[data-category]')
-
 const containerProducts = (name,id) => {
     const productContainer = document.createElement('div');
     productContainer.classList.add('category__container');
@@ -68,22 +76,5 @@ const newProduct = (imageURL,name,price) =>{
     return card;
 }
 
-const productsContainer = document.querySelector('[data-product]')
 
-const https1 = new XMLHttpRequest();
 
-//abrir http (metodo,url)
-https1.open("GET","http://localhost:3000/products")
-https1.send();
-
-https1.onload = () =>{
-    const data1 = JSON.parse(https1.response)
-    console.log(data1)
-    data1.forEach(products =>{
-        const productCard = newProduct(products.image,products.name,products.price )
-        productsContainer.appendChild(productCard)
-    })
-}
-
-/* export pro
- */
