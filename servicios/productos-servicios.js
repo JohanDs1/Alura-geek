@@ -1,40 +1,11 @@
+const listaCategorias = () => fetch("http://localhost:3000/categories").then(respuesta=>respuesta.json()) //En una linea
 
-const listaProductos = () =>{
-    const promise = new Promise((resolve,reject)=>{
-        
+
+const listaProductos = () => {
+    return fetch('http://localhost:3000/products').then(respuesta=>{
+        return respuesta.json()
     })
-}
-
-
-//Conectando las categorias existentes
-const http = new XMLHttpRequest();
-http.open("GET", "http://localhost:3000/categories");
-http.send();
-http.onload = () => {
-    const data = JSON.parse(http.response);
-    const categorySection = document.querySelector('.category');
-    
-    data.forEach(categoryData => {
-        const categoryContainer = containerProducts(categoryData.name, categoryData.id);
-        categorySection.appendChild(categoryContainer);  // Agregar al contenedor de la sección
-
-        const productsContainer = categoryContainer.querySelector('[data-product]');
-
-        const httpInterno = new XMLHttpRequest();
-        httpInterno.open('GET', 'http://localhost:3000/products');
-        httpInterno.send();
-        httpInterno.onload = () => {
-            const productsData = JSON.parse(httpInterno.response);
-            productsData.forEach(product => {
-                if (categoryData.id === product.category_id) {
-                    const productCard = newProduct(product.image, product.name, product.price);
-                    productsContainer.appendChild(productCard);
-                }
-            });
-        };
-    });
 };
-
 
 
 //Container para mostrar la categoria 
@@ -64,11 +35,6 @@ const containerProducts = (name,id) => {
     return productContainer;
 }
 
-
-
-
-//Container para sostener los productos
-
 //Creacion de productos
 const newProduct = (imageURL,name,price) =>{
     const card = document.createElement('div')
@@ -85,4 +51,26 @@ const newProduct = (imageURL,name,price) =>{
 }
 
 
+const categorySection = document.querySelector('.category');
 
+listaCategorias().then((categories) => {
+    categories.forEach(categoryData => {
+        const categoryContainer = containerProducts(categoryData.name, categoryData.id);
+        categorySection.appendChild(categoryContainer);
+
+        const productsContainer = categoryContainer.querySelector('[data-product]');
+
+        listaProductos().then((productsData) => {
+            productsData.forEach(product => {
+                if (categoryData.id === product.category_id) {
+                    const productCard = newProduct(product.image, product.name, product.price);
+                    productsContainer.appendChild(productCard);
+                }
+            });
+        }).catch(error => {
+            console.error("Error fetching products:", error);
+        });
+    });
+}).catch(error => {
+    console.error("Error fetching categories:", error);
+});
