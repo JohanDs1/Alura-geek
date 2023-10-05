@@ -1,3 +1,11 @@
+
+const listaProductos = () =>{
+    const promise = new Promise((resolve,reject)=>{
+        
+    })
+}
+
+
 //Conectando las categorias existentes
 const http = new XMLHttpRequest();
 http.open("GET", "http://localhost:3000/categories");
