@@ -8,6 +8,10 @@ const listaProductos = () => {
     })
 };
 
+/* const createProduct = (imageURL,name,price)=>{
+
+}
+ */
 
 export const clientServices = {
     listaCategorias,

@@ -60,9 +60,9 @@
                 <option value="option default" hidden>Select a category</option>
             </select>
 <!--             <input type="text" id="categoria" name="categoria" class="new__product__input" placeholder="Categoría" data-category>
- -->            <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
-            <input type="text" id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" data-price>
-            <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="new__product__description" placeholder="Descripción del producto"></textarea>
+ -->        <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
+            <input type="number"  id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" data-price>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="new__product__description" placeholder="Descripción del producto" data-description></textarea>
             <button class="new__product__button">Agregar Producto</button>
         </form>
     </section>
@@ -98,5 +98,6 @@
             </ul>
     </section>
     <script  type="module" src="../controllers/getCategories.js"></script>
+    <script type="module" src="../controllers/registerProduct.js" ></script>
 </body>
 </html>

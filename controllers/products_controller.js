@@ -2,7 +2,6 @@
 y luego a las funciones internas*/
 import { clientServices } from "../servicios/productos-servicios.js";
 
-
 //Container para mostrar la categoria 
 const containerProducts = (name,id) => {
     const productContainer = document.createElement('div');

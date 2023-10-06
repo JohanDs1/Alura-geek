@@ -1,29 +1,27 @@
-/* fetch("http://localhost:3000/categories")
-.then(response=>response.json())
-.then(data=>console.log(data))
-.catch(error=>console.log("Error en traer la informacion", error))
- */
-const http = new XMLHttpRequest;
-http.open('GET',`http://localhost:3000/categories`)
-http.send()
-http.onload = () =>{
-    const data = JSON.parse(http.response)
-    console.log(data)
-    const options = document.querySelector('[data-options]');
+import { clientServices } from "../servicios/productos-servicios.js"; //Importante poner .js , sino no corre y sale error 404
 
-    data.forEach(category => {
-        const option = getOption(category.name);
-        options.appendChild(option);
-    });
-    
-}
+const options = document.querySelector('[data-options]');
+
 //Obtener categorias en Admin
-
 const getOption = (name) => {
     const createOption = document.createElement('option');
     createOption.value = name; 
     createOption.textContent = name;
-
+    
     return createOption;
 }
+
+
+clientServices.listaCategorias().then((categoryData)=>{
+    categoryData.forEach(category => {
+        const option = getOption(category.name);
+        options.appendChild(option);
+    });
+    
+}).catch(error => {
+    console.error("Error fetching categories:", error);
+});
+
+
+
 
