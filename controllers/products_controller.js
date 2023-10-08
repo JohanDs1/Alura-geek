@@ -3,7 +3,31 @@ y luego a las funciones internas*/
 import { clientServices } from "../servicios/productos-servicios.js";
 
 //Container para mostrar la categoria 
-const containerProducts = (name,id) => {
+
+// Obtén una referencia al elemento de entrada de búsqueda
+const searchInput = document.getElementById('searchInput');
+
+// Agrega un evento de escucha para la pulsación de tecla en el campo de búsqueda
+searchInput.addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+        // Cuando se presiona Enter, obtén el valor de búsqueda y realiza la búsqueda
+        const searchTerm = searchInput.value.toLowerCase().trim();
+
+        // Filtra los productos según el término de búsqueda
+        const products = document.querySelectorAll('.product');
+        products.forEach(product => {
+            const productName = product.querySelector('.category__product__title').textContent.toLowerCase();
+            if (productName.includes(searchTerm)) {
+                product.style.display = 'block'; // Muestra el producto si coincide
+            } else {
+                product.style.display = 'none'; // Oculta el producto si no coincide
+            }
+        });
+    }
+});
+
+
+const containerProducts = (name, id) => {
     const productContainer = document.createElement('div');
     productContainer.classList.add('category__container');
     const contentContainer = `
@@ -30,11 +54,11 @@ const containerProducts = (name,id) => {
 }
 
 //Creacion de productos
-const newProduct = (imageURL,name,price) =>{
+const newProduct = (imageURL, name, price) => {
     const card = document.createElement('div')
     card.classList.add("product")
-    const contenido =  
-   ` <img src="${imageURL}" alt="" class="category__product__img">
+    const contenido =
+        ` <img src="${imageURL}" alt="" class="category__product__img">
     <div class="product__texts">
         <h2 class="category__product__title">${name}</h2>
         <p class="category__product__price">${price}$</p>
