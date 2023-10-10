@@ -8,12 +8,18 @@ const listaProductos = () => {
     })
 };
 
-/* const createProduct = (imageURL,name,price)=>{
+const createProduct = (category_id,name,price,image)=>{
+    return fetch('http://localhost:3000/products',{
+    method: "POST",
+    headers: {
+        "content-type": "application/json"
+    },
+    body:JSON.stringify({category_id,name,price,image, id: uuid.v4()}) //json.stringify sirve para transformar los datos a formato json
+})}
 
-}
- */
 
 export const clientServices = {
     listaCategorias,
-    listaProductos
+    listaProductos,
+    createProduct
 }

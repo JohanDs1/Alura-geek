@@ -61,7 +61,7 @@
             </select>
 <!--             <input type="text" id="categoria" name="categoria" class="new__product__input" placeholder="Categoría" data-category>
  -->        <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
-            <input type="number"  id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" data-price>
+            <input type="text"  id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" pattern="[0-9]+([.,][0-9]+)?"  data-price>
             <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="new__product__description" placeholder="Descripción del producto" data-description></textarea>
             <button class="new__product__button">Agregar Producto</button>
         </form>
@@ -97,6 +97,7 @@
                 <li class="rodapie__list__text">2023</li>
             </ul>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--uuid cdn, permite generar id's aleatorios-->
     <script  type="module" src="../controllers/getCategories.js"></script>
     <script type="module" src="../controllers/registerProduct.js" ></script>
 </body>

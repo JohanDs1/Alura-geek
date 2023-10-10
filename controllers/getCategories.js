@@ -3,9 +3,9 @@ import { clientServices } from "../servicios/productos-servicios.js"; //Importan
 const options = document.querySelector('[data-options]');
 
 //Obtener categorias en Admin
-const getOption = (name) => {
+const getOption = (name,category_id) => {
     const createOption = document.createElement('option');
-    createOption.value = name; 
+    createOption.value = parseInt(category_id); 
     createOption.textContent = name;
     
     return createOption;
@@ -14,7 +14,7 @@ const getOption = (name) => {
 
 clientServices.listaCategorias().then((categoryData)=>{
     categoryData.forEach(category => {
-        const option = getOption(category.name);
+        const option = getOption(category.name,category.id);
         options.appendChild(option);
     });
     
