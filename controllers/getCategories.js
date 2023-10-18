@@ -13,8 +13,8 @@ const getOption = (name,category_id) => {
 
 
 clientServices.listaCategorias().then((categoryData)=>{
-    categoryData.forEach(category => {
-        const option = getOption(category.name,category.id);
+    categoryData.forEach(({name,id}) => {
+        const option = getOption(name,id);
         options.appendChild(option);
     });
     

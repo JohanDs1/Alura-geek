@@ -4,6 +4,7 @@ import { clientServices } from "../servicios/productos-servicios.js";
 
 //Container para mostrar la categoria 
 const containerProducts = (name,id) => {
+    console.log(id)
     const productContainer = document.createElement('div');
     productContainer.classList.add('category__container');
     const contentContainer = `
@@ -49,15 +50,17 @@ const categorySection = document.querySelector('.category');
 
 clientServices.listaCategorias().then((categories) => {
     categories.forEach(categoryData => {
-        const categoryContainer = containerProducts(categoryData.name, categoryData.id);
+        const {name,id} = categoryData;
+        const categoryContainer = containerProducts(name, id);
         categorySection.appendChild(categoryContainer);
 
         const productsContainer = categoryContainer.querySelector('[data-product]');
 
         clientServices.listaProductos().then((productsData) => {
             productsData.forEach(product => {
-                if (categoryData.id === product.category_id) {
-                    const productCard = newProduct(product.image, product.name, product.price);
+                const {category_id,image,name,price} = product
+                if (id === category_id) {
+                    const productCard = newProduct(image, name, price);
                     productsContainer.appendChild(productCard);
                 }
             });

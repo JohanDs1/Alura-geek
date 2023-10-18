@@ -1,19 +1,13 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
     <link rel="stylesheet" href="../assets\css\reset.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets\css\header\header__icon__search.css">
     <link rel="stylesheet" href="../assets\css\header\header__logo.css">
     <link rel="stylesheet" href="../assets\css\header\header_input.css">
-    <link rel="stylesheet" href="../assets/css/header/header-button-admin.css">
-    <link rel="stylesheet" href="../assets/css/new-product.css">
-    <link rel="stylesheet" href="../assets/css/New-product/Form-new-product.css">
-    <link rel="stylesheet" href="../assets/css/New-product/new-product-input.css">
-    <link rel="stylesheet" href="../assets\css\New-product\new-product-texts.css">
-    <link rel="stylesheet" href="../assets\css\New-product\new-product-button.css">
     <link rel="stylesheet" href="../assets\css\footer.css">
     <link rel="stylesheet" href="../assets\css\footer\footer-logo\footer-logo.css">
     <link rel="stylesheet" href="../assets\css\footer\footer-list\footer-list.css">
@@ -27,8 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Create New Product</title>
-    <!--VARIABLES EN EL ARCHIVO RESET.CSS-->
 </head>
 <body>
     <section class="head">
@@ -46,28 +38,16 @@
                 
                 </div>
             </div>
-            <div class="header__menu__admin">
-                    <a href="https://www.google.com" class="link__menu__admin">Menu Administrador</a>
-            </div>
         </header>
     </section>
 
-    <section class="new__product">
-        <form action="" class="form__new__product" data-form>
-            <h1 class="new__product__title">Agregar Nuevo Producto</h1>
-            <input type="text" id="url" name="url" class="new__product__input" placeholder="URL de imagen" data-url>
-            <select class="new__product__input" name="categories" id="categories_menu" data-options>
-                <option value="option default" hidden>Select a category</option>
-            </select>
-<!--             <input type="text" id="categoria" name="categoria" class="new__product__input" placeholder="Categoría" data-category>
- -->        <input type="text" id="nombre" name="nombre" class="new__product__input" placeholder="Nombre del producto" data-name>
-            <input type="text"  id="precio" name="precio" class="new__product__input" placeholder="Precio del producto" pattern="[0-9]+([.,][0-9]+)?"  data-price>
-<!--             <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="new__product__description" placeholder="Descripción del producto" data-description></textarea>
- Se modifcara a futuro el codigo para poder mostrar una descripcion del producto-->
-             <button class="new__product__button">Agregar Producto</button>
-        </form>
+    <section data-products>
+
     </section>
-    
+
+
+
+
 
 
     <section class="footer">
@@ -98,8 +78,6 @@
                 <li class="rodapie__list__text">2023</li>
             </ul>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!--uuid cdn, permite generar id's aleatorios-->
-    <script  type="module" src="../controllers/getCategories.js"></script>
-    <script type="module" src="../controllers/registerProduct.js" ></script>
+    <script type="module" src="../servicios/productos-servicios.js" ></script>
 </body>
 </html>

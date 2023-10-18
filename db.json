@@ -157,6 +157,13 @@
       "price": "44.99",
       "image": "https://http2.mlstatic.com/D_NQ_NP_988208-CBT70864646430_082023-O.webp",
       "id": "076ebb0d-1216-477d-bdf0-ccc337b6cf77"
+    },
+    {
+      "category_id": 3,
+      "name": "JUEGO DE NFS",
+      "price": "1000",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/nfs-heat-lead-1573615981.jpg?crop=0.75xw:1xh;center,top&resize=1200:*",
+      "id": "532cd0c5-3567-495b-966e-29f43aef1354"
     }
   ]
 }
