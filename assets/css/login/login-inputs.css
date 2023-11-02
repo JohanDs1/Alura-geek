@@ -1,7 +1,7 @@
 .login__inputs{
     margin: 1rem 0;
     border-radius: 4px;
-    background-color: var(--BackgroundColor);
+    background-color: #FFF;
     border: none;
     outline: none;
     width: 20rem;

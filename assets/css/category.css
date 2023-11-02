@@ -1,7 +1,11 @@
+.category{
+    background-color: var(--BackgroundColor);
+}
 .category__container{
     padding: 2rem 5rem;
     width: 1133px;
     margin: 0 auto;
+
 }
 
 @media screen and (min-width:375px) and (max-width:412px) {

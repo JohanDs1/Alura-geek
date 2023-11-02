@@ -59,6 +59,7 @@ clientServices.listaCategorias().then((categories) => {
         clientServices.listaProductos().then((productsData) => {
             productsData.forEach(product => {
                 const {category_id,image,name,price} = product
+                console.log("IMAGEN: ",image,"NOMBRE: ",name,"PRECIO: ",price,"ID: ", product.id)
                 if (id === category_id) {
                     const productCard = newProduct(image, name, price);
                     productsContainer.appendChild(productCard);
