@@ -35,6 +35,7 @@ const newProduct = (imageURL,name,price,id) =>{
     card.classList.add("product")
     const contenido =  
    ` <img src="${imageURL}" alt="" class="category__product__img">
+   <i class="fa-solid fa-trash" style="color: #005eff;"></i>
     <div class="product__texts">
         <h2 class="category__product__title">${name}</h2>
         <p class="category__product__price">${price}$</p>
@@ -43,6 +44,8 @@ const newProduct = (imageURL,name,price,id) =>{
     card.innerHTML = contenido
     return card;
 }
+
+
 
 
 /* const categorySection = document.querySelector('.category');
@@ -61,12 +64,21 @@ clientServices.listaCategorias().then((categories) => {
 });
  */ 
 
-    const productsContainer = document.querySelector('[data-category]');
+   const productsContainer = document.querySelector('[data-product]');
 clientServices.listaProductos().then((productsData) => {
     productsData.forEach(product => {
         const {image,name,price,id} = product
             const productCard = newProduct(image, name, price,id);
+            //Icono para editar el producto
+            /* const editIcon = document.createElement('i');
+            editIcon.classList.add('fas', 'fa-trash-alt');
+            editIcon.style.color = '#1765ee'; 
+            productCard.appendChild(editIcon); */
+            //Icono para eliminar
+
             productsContainer.appendChild(productCard);
+
+
     });
 }).catch(error => {
     console.error("Error fetching products:", error);

@@ -1,10 +1,17 @@
 .products{
-    margin-top: 1rem;
+    margin: 3rem 0;
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 3rem 1rem;
     flex-wrap: wrap;
 }
+.fa-solid.fa-trash{
+    color: #1765ee;
+    display: block;
+    width: 20px;
+    height: 30px;
+}
+
 @media screen and (min-width:375px) and (max-width:412px) {
     .products{
         flex-wrap: wrap;
