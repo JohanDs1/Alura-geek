@@ -6,10 +6,13 @@
     flex-wrap: wrap;
 }
 .fa-solid.fa-trash{
-    color: #1765ee;
+    position: relative;
+    background-color: #1765ee;
     display: block;
     width: 20px;
     height: 30px;
+    top: -185px;
+    left: 165px;
 }
 
 @media screen and (min-width:375px) and (max-width:412px) {
