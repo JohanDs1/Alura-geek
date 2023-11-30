@@ -17,9 +17,16 @@ const createProduct = (category_id,name,price,image)=>{
     body:JSON.stringify({category_id,name,price,image, id: uuid.v4()}) //json.stringify sirve para transformar los datos a formato json
 })}
 
+const deleteProduct = (id) =>{
+    return fetch(`http://localhost:3000/products/${id}`,{
+        method: 'DELETE',
+    });
+}
+
 
 export const clientServices = {
     listaCategorias,
     listaProductos,
-    createProduct
+    createProduct,
+    deleteProduct
 }
