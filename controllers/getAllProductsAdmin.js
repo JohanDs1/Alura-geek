@@ -7,6 +7,7 @@ const newProduct = (imageURL,name,price,id) =>{
     card.classList.add("product")
     const contenido =  
    ` <img src="${imageURL}" alt="" class="category__product__img">
+   <i><a href="Admin-createProduct.html?id=${id}"><img class="editIcon" src="../assets/img/edit_product.svg" alt="icono-editar"></a></img></i>
    <i><img class="fa-solid fa-trash" src="../assets/img/trash-solid.svg" alt="Borrar" id="${id}" ></i>
     <div class="product__texts">
         <h2 class="category__product__title">${name}</h2>

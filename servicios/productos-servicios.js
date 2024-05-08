@@ -22,11 +22,14 @@ const deleteProduct = (id) =>{
         method: 'DELETE',
     });
 }
-
+const detailProduct = (id) =>{
+    return fetch(`http://localhost:3000/products/${id}`).then( response => console.log(response))
+}
 
 export const clientServices = {
     listaCategorias,
     listaProductos,
     createProduct,
-    deleteProduct
+    deleteProduct,
+    detailProduct
 }
